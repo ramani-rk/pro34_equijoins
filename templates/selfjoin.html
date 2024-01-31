@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EquiJoins</title>
+    <title>SelfJoins</title>
     <style>
         table,th,td
         {
@@ -11,6 +11,7 @@
             border: 2px solid;
             padding: 10px;
         }
+
     </style>
 </head>
 <body>
@@ -18,7 +19,6 @@
         <h1>Employee Details</h1>
         <table>
             <tr>
-
                 <th>Emp No</th>
                 <th>Emp Name</th>
                 <th>Job</th>
@@ -29,12 +29,9 @@
                 <th>Dept No</th>
                 <th>Dept Name</th>
                 <th>Dept Loc</th>
-              
             </tr>
-            
 
-            {% for emp in EMO%}
-
+            {% for emp in emo %}
             <tr>
                 <td>{{emp.empno}}</td>
                 <td>{{emp.ename}}</td>
@@ -46,9 +43,7 @@
                 <td>{{emp.deptno.deptno}}</td>
                 <td>{{emp.deptno.dname}}</td>
                 <td>{{emp.deptno.dloc}}</td>
-
             </tr>
-
             {% endfor %}
         </table>
     </center>
